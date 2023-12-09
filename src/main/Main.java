@@ -10,10 +10,13 @@ public class Main {
         window.setTitle("My2DJavaGame");
         window.setLocationRelativeTo(null); // not specifying the location of the window, center-defaulted
 
-        window.add(new GamePanel());
+        GamePanel gamePanel = new GamePanel();
+        window.add(gamePanel);
         window.pack(); // fit the frame into the size and layouts of its subcomponent (GamePanel)
 
         window.setVisible(true);
+        gamePanel.gameStart();
+
     }
 
 
